@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice de HTML</title>
+</head>
+<body bgcolor="#00ffff">
+    <h1 align="center"><i>Corrigé des exercices de HTML</i></h1>
+    <hr width="80%" height="2">
+    <h2 align="left"><i>Exercice 2</i></h2>
+    <table width="70%" height="auto" align="center" border="1" cellpadding="6" cellspacing="6" bgcolor="white">
+        <tr>
+            <td align="center" colspan="3" width="100%" height="auto">Cette cellule occupe tout la largeur du tableau</td>
+        </tr>
+        <tr>
+            <td width="20%" height="auto" align="left">Alignement à gauche</td>
+            <td width="20%" height="auto" align="center">Texte centré</td>
+            <td width="20%" height="auto" align="right">Alignement à droite</td>
+        </tr>
+        <tr>
+            <td width="20%" height="5" rowspan="2">Cette cellule occupe deux lignes</td>
+            <td width="20%" height="5"> <font color="red">Ecrit en rouge</font></td>
+            <td width="20%" height="5"></td>
+        </tr>
+        <tr>
+            <td width="20%" height="5">Je ne définis que</td>
+            <td width="20%" height="5">
+                <table>
+                    <tr>
+                        <td colspan="2">Deux cellules sur cette ligne</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" height="5" colspan="2">Fusion de deux cellules</td>
+            <td bgcolor="yellow" width="20%" height="5"></td>
+        </tr>
+    </table>
+    <ul>
+        <li>Titre 1</li>
+        <li>Titre 2 
+            <ul>
+                <li>Selection 1</li>
+                <li>Selection 2
+                    <ul>
+                        <li>Sous-section 1</li>
+                        <li>Sous-section 2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li>Section 1</li>
+                <li>Section 2</li>
+            </ul>
+        </li>
+    </ul>
+    <p> <font face="Comic sans MS"> J'utilise la police Comic sans MS</font></p>
+    <p> <font face="Arial"> J'utilise la police Arial</font></p>
+    <p> <font face="Verdana"> J'utilise la police Verdana</font></p>
+    <table width="70%" height="auto" align="center" bgcolor="white" border="1">
+        <tr><td><form action="traitement.php" method="post">
+            <table align="center"><h3  align="center">Vos Coordonnées</h3>
+                <tr>
+                    <td><label for="Nom"></label> Nom :</td>
+                    <td><input type="text" id="Nom" name="Nom" placeholder="Votre nom" required></td>
+                </tr>
+                <tr>
+                    <td>Prénom :</td>
+                    <td><input type="text" id="prénom" name="prénom" placeholder="Votre prénom" required></td>
+                </tr>
+                <tr>
+                    <td><label for="date"></label> Date de naissance :</td>
+                    <td><input type="date" id="date" name="date" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mail"></label> Mail :</td>
+                    <td><input type="email" id="mail" name="mail" placeholder="Votre email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="site web"></label> Votre site :</td>
+                    <td><input type="url" id="site web" name="site web" required></td>
+                </tr>
+                <tr>
+                    <td><label for="code"></label> Code :</td>
+                    <td><input type="password" id="code" name="code" required></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"> <label for="genre"></label>Genre :</td>
+                    <td><input type="radio" id="genre" name="genre" required>Homme</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="genre" name="genre" required>Femme</td>
+                </tr>
+                <tr>
+                    <td><label for="Pays"></label>Pays :</td>
+                    <td>
+                        <select name="Pays" id="Pays">
+                            <option value=""></option>
+                            <option value="Cameroun">Cameroun</option>
+                            <option value="Maroc">Maroc</option>
+                            <option value="Chine">Chine</option>
+                            <option value="Japon">Japon</option>
+                            <option value="Suisse">Suisse</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Etas-unis">Etas-unis</option>
+                            <option value="France">France</option>
+                            <option value="Belgique">Belgique</option>
+                            <option value="Emirates">Emirates</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <table align="center">
+                <tr>
+                    <td>
+                        <input type="checkbox" id="fraise" name="gout" value="Tarte aux fraises">
+        <label for="fraise">Tarte aux fraises à la crème d'amandes</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="prune" name="gout" value="Tarte aux prunes">
+        <label for="prune">Tarte aux prunes</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="mirabelle" name="gout" value="Tarte aux mirabelles">
+                       <label for="mirabelle">Tarte rustique aux mirabelles de Lorraine, noisettes et miel</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="details">Décrivez vos goûts en détail :</label></td>
+                </tr>
+                <tr>
+                    <td rowspan="4">
+                       <textarea id="details" name="details" rows="4" cols="50" placeholder="Décrivez vos goûts en détails" required></textarea>
+                    </td>
+                </tr>
+            </table>
+            <table>
+
+            </table>
+            <table align="center">
+                <tr>
+                    <td colspan="2">
+                        <h3>Envoyez-nous votre photo</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </form></td></tr>
+    </table>
+</body>
+</html>
