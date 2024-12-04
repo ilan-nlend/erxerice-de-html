@@ -9,14 +9,14 @@
     <h1 align="center"><i>Corrigé des exercices de HTML</i></h1>
     <hr width="80%" height="2">
     <h2 align="left"><i>Exercice 2</i></h2>
-    <table width="100%0%" height="auto" align="left" border="1" cellpadding="6" cellspacing="6" >
+    <table width="60%" align="center" border="1" cellpadding="6" cellspacing="6" >
         <tr>
             <td align="center" colspan="3" width="100%" height="auto">Cette cellule occupe tout la largeur du tableau</td>
         </tr>
         <tr>
-            <td width="20%" height="auto" align="left">Alignement à gauche</td>
-            <td width="20%" height="auto" align="center">Texte centré</td>
-            <td width="20%" height="auto" align="right">Alignement à droite</td>
+            <td width="20%" height="5" align="left">Alignement à gauche</td>
+            <td width="20%" height="5" align="center">Texte centré</td>
+            <td width="20%" height="5" align="right">Alignement à droite</td>
         </tr>
         <tr>
             <td width="20%" height="5" rowspan="2">Cette cellule occupe deux lignes</td>
@@ -35,10 +35,11 @@
         </tr>
         <tr>
             <td width="20%" height="5" colspan="2">Fusion de deux cellules</td>
-            <td bgcolor="yellow" width="20%" height="5"></td>
+            <td bgcolor="orange" width="20%" height="5"></td>
         </tr>
     </table>
-    <h2>exercice 3</h2>
+    <br>
+    <h2 align="left"><i>Exercice 3</i></h2>
     <br>
     <ul>
         <li>Titre 1</li>
@@ -61,192 +62,198 @@
         </li>
     </ul>
     <br>
-    <h2>exercice 4</h2>
+    <h2 align="left"><i>Exercice 4</i></h2>
     <br>
     <p> <font face="Comic sans MS"> J'utilise la police Comic sans MS</font></p>
     <p> <font face="Arial"> J'utilise la police Arial</font></p>
     <p> <font face="Verdana"> J'utilise la police Verdana</font></p>
     <br>
-    <h2>erxercice 5</h2>
+    <h2 align="left"><i>Exercice 5</i></h2>
     <br>
-    <table width="100%%" height="auto" align="left" border="1">
+    <table width="60%" height="auto" align="center" >
         <tr><td><form action="traitement.php" method="post">
-            <table align="center" width="100%">
-                <tr><td><h3 align="left">Vos Coordonnées</h3></td></tr>
-                <tr>
-                    <td><label for="Nom"></label> Nom :</td>
-                    <td><input type="text" id="Nom" name="Nom" placeholder="Votre nom" required></td>
-                </tr>
-                <tr>
-                    <td>Prénom :</td>
-                    <td><input type="text" id="prénom" name="prénom" size="35" placeholder="Votre prénom" required></td>
-                </tr>
-                <tr>
-                    <td><label for="date"></label> Date de naissance :</td>
-                    <td><input type="date" id="date" name="date" required></td>
-                </tr>
-                <tr>
-                    <td><label for="mail"></label> Mail :</td>
-                    <td><input type="email" id="mail" name="mail" size="35" placeholder="Votre email" required></td>
-                </tr>
-                <tr>
-                    <td><label for="site web"></label> Votre site :</td>
-                    <td><input type="url" id="site web" name="site web" required></td>
-                </tr>
-                <tr>
-                    <td><label for="code"></label> Code :</td>
-                    <td><input type="password" id="code" name="code" size="35" required></td>
-                </tr>
-                <tr>
-                    <td rowspan="2"> <label for="genre"></label>Genre :</td>
-                    <td><input type="radio" id="genre" name="genre" required>Homme</td>
-                </tr>
-                <tr>
+            <fieldset><legend>Vos Coordonnées</legend>
+                <table align="center" width="100%">
+                    <tr>
+                        <td><label for="Nom"></label> Nom :</td>
+                        <td><input type="text" id="Nom" name="Nom" placeholder="Votre nom" required></td>
+                    </tr>
+                    <tr>
+                        <td>Prénom :</td>
+                        <td><input type="text" id="prénom" name="prénom" size="35" placeholder="Votre prénom" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="date"></label> Date de naissance :</td>
+                        <td><input type="date" id="date" name="date" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail"></label> Mail :</td>
+                        <td><input type="email" id="mail" name="mail" size="35" placeholder="Votre email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="site web"></label> Votre site :</td>
+                        <td><input type="url" id="site web" name="site web" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="code"></label> Code :</td>
+                        <td><input type="password" id="code" name="code" size="35" required></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"> <label for="genre"></label>Genre :</td>
+                        <td><input type="radio" id="genre" name="genre" required>Homme</td>
+                    </tr>
+                    <tr>
                     <td><input type="radio" id="genre" name="genre" required>Femme</td>
-                </tr>
-                <tr>
-                    <td><label for="Pays"></label>Pays :</td>
-                    <td>
-                        <select name="Pays" id="Pays" required>
-                            <option value=""></option>
-                            <option value="Cameroun">Cameroun</option>
-                            <option value="Maroc">Maroc</option>
-                            <option value="Chine">Chine</option>
-                            <option value="Japon">Japon</option>
-                            <option value="Suisse">Suisse</option>
-                            <option value="Canada">Canada</option>
-                            <option value="Etas-unis">Etas-unis</option>
-                            <option value="France">France</option>
-                            <option value="Belgique">Belgique</option>
-                            <option value="Emirates">Autre</option>
-                        </select>
-                    </td>
-                </tr>
-            </table>
-            <table align="center" width="100%">
-                <tr><td align="left"><h3>Vos Goûts</h3></td></tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="fraise" name="gout" value="Tarte aux fraises">
-        <label for="fraise">Tarte aux fraises à la crème d'amandes</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="prune" name="gout" value="Tarte aux prunes">
-        <label for="prune">Tarte aux prunes</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="mirabelle" name="gout" value="Tarte aux mirabelles">
-                       <label for="mirabelle">Tarte rustique aux mirabelles de Lorraine, noisettes et miel</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="details"></label></td>
-                </tr>
-                <tr>
-                    <td rowspan="4">
-                       <textarea id="details" name="details" rows="5" cols="70" placeholder="Décrivez vos goûts en détails" required></textarea>
-                    </td>
-                </tr>
-            </table>
-            <table align="center" width="100%">
-                <tr><td colspan="2" align="left" width="100%"><h3>Envoyez-nous votre photo</h3></td></tr>
-                <tr>
-                    <td colspan="2" align="left">
-                        <label for="photo"></label>
-                        <input type="file" id="photo" accept="image/*" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td rowspan="2" width="40%" align="left">
-                        <label for="photo">
-                            <button type="reset">Effacer</button>
-                        </label>
-                        <button type="submit">Envoyer</button>
-                    </td>
-                    <td width="50%"></td>
-                </tr>
-            </table>
+                    </tr>
+                    <tr>
+                        <td><label for="Pays"></label>Pays :</td>
+                        <td>
+                            <select name="Pays" id="Pays" required>
+                                <option value=""></option>
+                                <option value="Cameroun">Cameroun</option>
+                                <option value="Maroc">Maroc</option>
+                                <option value="Chine">Chine</option>
+                                <option value="Japon">Japon</option>
+                                <option value="Suisse">Suisse</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Etas-unis">Etas-unis</option>
+                                <option value="France">France</option>
+                                <option value="Belgique">Belgique</option>
+                                <option value="Emirates">Autre</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset><legend>Vos Goûts</legend>
+                <table align="center" width="100%">
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="fraise" name="gout" value="Tarte aux fraises">
+                            <label for="fraise">Tarte aux fraises à la crème d'amandes</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="prune" name="gout" value="Tarte aux prunes">
+                            <label for="prune">Tarte aux prunes</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="mirabelle" name="gout" value="Tarte aux mirabelles">
+                            <label for="mirabelle">Tarte rustique aux mirabelles de Lorraine, noisettes et miel</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="details"></label></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">
+                            <textarea id="details" name="details" rows="5" cols="70" placeholder="Décrivez vos goûts en détails" required></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset><legend>Envoyez-nous votre photo</legend>
+                <table align="center" width="100%">
+                    <tr>
+                        <td colspan="2" align="left">
+                            <label for="photo"></label>
+                            <input type="file" id="photo" accept="image/*" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="40%" align="left">
+                            <label for="photo"><br>
+                                <button type="reset">Effacer</button>
+                            </label>&nbsp;&nbsp;&nbsp;
+                            <button type="submit">Envoyer</button>
+                        </td>
+                        <td width="50%"></td>
+                    </tr>
+                </table>
+            </fieldset>
         </form></td></tr>
     </table>
-    <br><br>
-    <h2>erxercice 6</h2>
     <br>
-    <table width="100%0%" height="auto" border="1" align="left">
-        <form action="traitement.php" method="post">
-            <tr>
-                <td>
-                    <table>   
-                        <tr>
-                            <td><label for="civilite">Civilité </label></td>
-                            <td>
-                               <input type="radio" name="civilite" value="Mademoiselle" id="mademoiselle">
-                               <label for="mademoiselle">Mademoiselle</label>
-                               <input type="radio" name="civilite" value="Madame" id="madame">
-                               <label for="madame">Madame</label>
-                               <input type="radio" name="civilite" value="Monsieur" id="monsieur">
-                               <label for="monsieur">Monsieur</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label for="nom">Nom/ Prénom </label></td>
-                            <td><input type="text" name="nom" id="nom" size="45"></td>
-                        </tr>
-                        <tr>
-                            <td><label for="adresse">Adresse </label></td>
-                            <td><textarea name="adresse" id="adresse" rows="2" cols="44"  placeholder="Rue No Boite postale" required></textarea></td>
-                        </tr>
-                        <tr>
-                            <td><label for="code_postal">Code postal/ <br>Localité/ <br>Gouvernorat </label></td>
-                            <td>
-                                <input type="text" name="code_postal" id="code_postal" size="6">
-                                <input type="text" name="code_postal" id="code_postal" size="15">
-                                <select name="localite" id="localite">
-                                    <option value="Jendouba">Jendouba</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label for="pays">Pays </label></td>
-                            <td>
-                                <select name="pays" id="pays">
-                                    <option value="Tunisie">Tunisie</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Plateforme(s) </td>
-                            <td>
-                                <input type="checkbox" name="plateforme" value="Windows" id="windows">
-                                <label for="windows">Windows</label>
-                                <input type="checkbox" name="plateforme" value="Macintosh" id="macintosh">
-                                <label for="macintosh">Macintosh</label>
-                                <input type="checkbox" name="plateforme" value="Unix" id="unix">
-                                <label for="unix">Unix</label>
-                           </td>
-                        </tr>
-                        <tr>
-                            <td><label for="applications">Applications </label></td>
-                            <td colspan="2" align="left" rowspan="2">
-                                <select name="applications[]" id="applications" multiple size="5">
-                                   <option value="Bureautique">Bureautique</option>
-                                   <option value="DAO">DAO</option>
-                                   <option value="Statistiques">Statistiques</option>
-                                   <option value="SGBD">SGBD</option>
-                                   <option value="Internet">Internet</option>
-                                </select><br><br>
-                               <button type="submit">Soumettre le formulaire</button>
-                               <button type="reset">Effacer</button>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </form>
+    <h2 align="left"><i>Exercice 6</i></h2>
+    <br>
+    <table width="60%" height="auto" align="center">
+       <tr>
+           <td>
+                <form action="traitement.php" method="post">
+                    <fieldset><legend>Coordonnées</legend>
+                        <table>   
+                            <tr>
+                                <td><label for="civilite">Civilité </label></td>
+                                <td>
+                                    <input type="radio" name="civilite" value="Mademoiselle" id="mademoiselle">
+                                    <label for="mademoiselle">Mademoiselle</label>
+                                    <input type="radio" name="civilite" value="Madame" id="madame">
+                                    <label for="madame">Madame</label>
+                                    <input type="radio" name="civilite" value="Monsieur" id="monsieur">
+                                    <label for="monsieur">Monsieur</label>
+                                </td>
+                          </tr>
+                           <tr>
+                               <td><label for="nom">Nom/ Prénom </label></td>
+                               <td><input type="text" name="nom" id="nom" size="45"></td>
+                           </tr>
+                            <tr>
+                              <td><label for="adresse">Adresse </label></td>
+                                <td><textarea name="adresse" id="adresse" rows="2" cols="44"  placeholder="Rue No Boite postale" required></textarea></td>
+                           </tr>
+                           <tr>
+                               <td><label for="code_postal">Code postal/ <br>Localité/ <br>Gouvernorat </label></td>
+                               <td>
+                                    <input type="text" name="code_postal" id="code_postal" size="6">
+                                    <input type="text" name="code_postal" id="code_postal" size="15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <select name="localite" id="localite">
+                                        <option value="Jendouba">Jendouba</option>
+                                   </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="pays">Pays </label></td>
+                                <td>
+                                   <select name="pays" id="pays">
+                                      <option value="Tunisie">Tunisie</option>
+                                  </select>
+                               </td>
+                            </tr>
+                            <tr>
+                               <td>Plateforme(s) </td>
+                               <td>
+                                   <input type="checkbox" name="plateforme" value="Windows" id="windows">
+                                   <label for="windows">Windows</label>
+                                   <input type="checkbox" name="plateforme" value="Macintosh" id="macintosh">
+                                   <label for="macintosh">Macintosh</label>
+                                   <input type="checkbox" name="plateforme" value="Unix" id="unix">
+                                   <label for="unix">Unix</label>
+                               </td>
+                           </tr>
+                           <tr>
+                                <td><label for="applications">Applications </label></td>
+                                <td colspan="2" align="left" rowspan="2">
+                                    <select name="applications[]" id="applications" multiple size="5">
+                                       <option value="Bureautique">Bureautique</option>
+                                       <option value="DAO">DAO</option>
+                                       <option value="Statistiques">Statistiques</option>
+                                       <option value="SGBD">SGBD</option>
+                                       <option value="Internet">Internet</option>
+                                    </select><br><br>
+                                       <button type="submit">Soumettre le formulaire</button>
+                                       <button type="reset">Effacer</button>
+                               </td>
+                           </tr>
+                       </table>
+                    </fieldset>
+                </form>
+           </td>
+       </tr>
     </table>
+    
 </body>
 </html>
 </body>
