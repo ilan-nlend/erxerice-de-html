@@ -1,0 +1,15 @@
+/***** style pour le fieldset *****/ 
+fieldset{
+    border: 2px solid #c3c6c9;
+    border-radius: 10px;
+} 
+legend{
+    font-weight: bold;
+}
+.section-stylisée input[type=radio]:checked{
+    accent-color: #007BFF;
+}
+.section-stylisée input [type=checkbox]:checked{
+    accent-color: #007BFF;
+}
+/***** End style pour le fieldset *****/
