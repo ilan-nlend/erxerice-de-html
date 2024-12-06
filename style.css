@@ -1,4 +1,4 @@
-/***** style pour le fieldset *****/ 
+/***** Section *****/ 
 fieldset{
     border: 2px solid #c3c6c9;
     border-radius: 10px;
@@ -12,4 +12,7 @@ legend{
 .section-stylisée input [type=checkbox]:checked{
     accent-color: #007BFF;
 }
-/***** End style pour le fieldset *****/
+input{
+    color: bisque;
+    border: #06182b;
+ /***** End Section *****/
